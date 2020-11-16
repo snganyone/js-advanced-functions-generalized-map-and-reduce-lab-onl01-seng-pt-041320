@@ -4,9 +4,9 @@ function map(src, call){
 }
 
 function reduce(src, call, start){
-    if (start){
-        src.reduce(call, start);
-    } else{
-        src.reduce(call);
+    if (start) {
+        return src.reduce(call, start);
+    } else {
+        return src.reduce(call);
     }
 }
